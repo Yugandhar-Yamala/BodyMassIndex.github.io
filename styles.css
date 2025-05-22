@@ -6,13 +6,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url(WhatsApp\ Image\ 2025-05-21\ at\ 16.55.33_66c734d7.jpg) no-repeat center center fixed;
+    background: url('WhatsApp Image 2025-05-21 at 16.55.33_66c734d7.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     color: #fff;
+    padding: 20px; /* ensures padding on small screens */
 }
 
 .container {
@@ -25,14 +26,13 @@ body {
     max-width: 500px;
     margin-top: -70px;
     position: relative;
-    left: -2%;
+    left: 0; /* removed fixed offset for responsiveness */
 }
 
 h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-    color:#FFA500;
-    
+    color: #FFA500;
 }
 
 .form-container {
@@ -69,9 +69,9 @@ button {
     background-color: #ffcc00;
     color: #333;
     border: black solid 2px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding-top: 5PX;
+    padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
@@ -111,4 +111,45 @@ button:hover {
 
 #status.underweight {
     color: #000000;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin-top: -30px;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .container {
+        margin-top: 0;
+        padding: 15px;
+    }
 }
