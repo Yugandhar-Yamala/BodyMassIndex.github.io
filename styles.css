@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('WhatsApp\ Image\ 2025-05-21\ at\ 16.55.33_66c734d7.jpg') no-repeat center center fixed;
+    background: url(WhatsApp\ Image\ 2025-05-21\ at\ 16.55.33_66c734d7.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
